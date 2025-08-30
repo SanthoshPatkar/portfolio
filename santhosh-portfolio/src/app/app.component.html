@@ -1,0 +1,353 @@
+<div class="portfolio-container">
+  <nav class="navbar" [class.scrolled]="isScrolled">
+    <div class="logo" [@fadeInUp]>Portfolio</div>
+    <ul class="nav-links" [class.mobile]="isMenuOpen">
+      <li><a href="#home" [class.active]="activeSection === 'home'" (click)="scrollToSection('home')">Home</a></li>
+      <li><a href="#about" [class.active]="activeSection === 'about'" (click)="scrollToSection('about')">About</a></li>
+      <li><a href="#skills" [class.active]="activeSection === 'skills'" (click)="scrollToSection('skills')">Skills</a>
+      </li>
+      <li><a href="#projects" [class.active]="activeSection === 'projects'"
+          (click)="scrollToSection('projects')">Projects</a></li>
+      <li><a href="#contact" [class.active]="activeSection === 'contact'"
+          (click)="scrollToSection('contact')">Contact</a>
+      </li>
+    </ul>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <section id="home" class="section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hi, I'm Santhosh 👋 </h1>
+          <h2>iOS Developer</h2>
+          <h3>A Passionate Software Developer Building Scalable, Clean & User-Friendly Applications</h3>
+          <p>iOS Developer with 3+ years of experience building high-performance iOS applications. Proficient in Swift,
+            SwiftUI, UIKit, and architectural patterns like MVVM and Clean Architecture. Skilled in RxSwift, Combine,
+            REST API integration, MapKit, and Firebase. Strong understanding of Apple’s Human Interface Guidelines and
+            experienced in using third-party libraries.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#contact" class="btn secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/santhosh.jpeg" alt="Santhosh G Patkar">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>iOS Developer</h3>
+          <p>I'm a software engineer with a strong background in building production-grade applications. I’ve worked on
+            multiple high-profile client projects across domains like media, e-commerce, and enterprise tools. </p>
+          <ul>
+            <li>
+              <p>Built and maintained scalable iOS apps using Swift, SwiftUI, UIKit, and MVVM with Clean Architecture.
+              </p>
+            </li>
+            <li>
+              <p> Implemented responsive UIs with Auto Layout, and used RxSwift for reactive data handling.</p>
+            </li>
+            <li>
+              <p>Integrated social login, Firebase Realtime Database, JWPlayer, Core Animation, and rich push
+                notifications.</p>
+            </li>
+            <li>
+              <p>Ensured seamless App Store submissions and timely updates in compliance with Apple guidelines.</p>
+            </li>
+            <li>
+              <p>Contributed to Vision Pro development, focusing on immersive UI components.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="about-image">
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Experience:</span>
+              <span class="detail-value">3 Years</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Companies Worked:</span>
+              <span class="detail-value">Robosoft Technologies</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Location:</span>
+              <span class="detail-value">Udupi, Karnataka, India</span>
+            </div>
+            <!-- <div class="detail-item">
+              <span class="detail-label">Availability:</span>
+              <span class="detail-value">Full-time</span>
+            </div> -->
+          </div>
+          <div class="about-cta-container">
+            <div class="about-cta">
+              <a href="assets/Santhosh-Resume.pdf" download class="btn primary">Download Resume</a>
+            </div>
+            <div class="about-cta">
+              <a href="https://medium.com/@santhoshpatkar" target="_blank" class="btn primary">Medium</a>
+            </div>
+            <div class="about-cta">
+              <a href="https://github.com/SanthoshPatkar" target="_blank" class="btn primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="skills-content">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">Swift</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Objective C</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">TypeScript</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Libraries -->
+        <div class="skill-category">
+          <h3>Libraries and FrameWorks</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">UIKit</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SwiftUI</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">FireBase</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MapKit</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Combine</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <span class="skill-name">CoreData</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">RxSwift</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SourceTree</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Git and GitHub</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Angular JS</span>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <div class="skills-grid">
+            <span class="skill-badge">Appwrite</span>
+            <span class="skill-badge">Express</span>
+            <span class="skill-badge">Fastify</span>
+            <span class="skill-badge">Lucia</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Prisma</span>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+
+    <section id="projects" class="section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="projects-content">
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Dekoder News App</h3>
+            <p>It is news app using MVVM Clean Architecture. Developed from scratch, with server driven UI and live
+              election content</p>
+            <div class="project-tags">
+              <span class="tag">UIKit</span>
+              <span class="tag">Swift</span>
+              <span class="tag">MVVM</span>
+              <span class="tag">RxSwift</span>
+              <span class="tag">REST API</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Server-driven UI</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="btn outline">View Details</a>
+            </div> -->
+          </div>
+
+          <div class="project-image">
+            <ul>
+              <li>
+                <p>Implemented RESTful APIs, Firebase, and social authentication for dynamic news content delivery.</p>
+              </li>
+              <li>
+                <p> Enabled media playback with background support and lock screen controls via JWPlayer..</p>
+              </li>
+              <li>
+                <p>Applied reactive programming with RxSwift and structured navigation using Clean Architecture.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <ul>
+              <li>
+                <p>Integrated SwiftUI into existing UIKit modules for enhanced visual components.</p>
+              </li>
+              <li>
+                <p> Diagnosed and resolved bugs; authored unit tests to improve code reliability in the OnTV section.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="project-info">
+            <h3>Food Network Kitchen</h3>
+            <p>iOS app with server-side driven UI and live cooking classes. Built using Swift and Combine.</p>
+            <div class="project-tags">
+              <span class="tag">Swift</span>
+              <span class="tag">UIKit</span>
+              <span class="tag">SwiftUI</span>
+              <span class="tag">Combine</span>
+            </div>
+            <!-- <div class="project-links">
+              <a href="#" class="btn outline">View Details</a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <a href="mailto:ssanthoshp159&#64;gmail.com">
+            <div class="contact-icon">
+             <img src="assets/email.png" alt="Santhosh G Patkar">
+            </div>
+            <div class="contact-detail">
+              <h3>Email</h3>
+              <p><a href="mailto:santhoshgpatkar13&#64;gmail.com">santhoshgpatkar13&#64;gmail.com</a></p>
+            </div>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://www.linkedin.com/in/santhosh-g-patkar" target="_blank">
+              <div class="contact-icon">
+                <img src="assets/linkedin.png" alt="Santhosh G Patkar">
+              </div>
+              <div class="contact-detail">
+                <h3>LinkedIn</h3>
+                <p><a href="https://www.linkedin.com/in/santhosh-g-patkar" target="_blank">Santhosh Patkar</a></p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://x.com/Santhosh_Patkar?t=nuMPhkueFCjccPp2Q-urTQ&s=09" target="_blank">
+              <div class="contact-icon">
+                <img src="assets/twitter.png" alt="Santhosh G Patkar">
+              </div>
+              <div class="contact-detail">
+                <h3>X-Twitter</h3>
+                <p><a href="https://x.com/Santhosh_Patkar?t=nuMPhkueFCjccPp2Q-urTQ&s=09" target="_blank">Santhosh Patkar</a></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+    </div>
+  </footer>
+</div>
